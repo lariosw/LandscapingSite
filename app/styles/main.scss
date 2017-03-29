@@ -1,0 +1,78 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+//Global Styles
+$main-color: green;
+
+//Page Specific Styles
+@import "gallery";
+
+.site-header{
+  .navbar {
+    background-color: #008080;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+  }
+
+  .navbar-logo {
+    padding-left: 50px;
+    img {
+      padding-right: 10px;
+      width: 70px;
+      height: 50px;
+    }
+  }
+
+  .navbar-header {
+    padding: 10px;
+  }
+  .navbar-collapse {
+    padding-top: 75px;
+  }
+  .navbar-nav {
+    margin-top: -29px;
+    padding: 7px;
+    font-size: 15px;
+    li a {
+      color: #F28B52 !important;
+      font-weight: 500;
+    }
+  }
+}
+
+
+  /* toggle wrappers */
+.toggleWrapper {
+  .toggleButtonWrapper {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .toggleShowButton, .toggleHideButton {
+    display: inline-block;
+  }
+  .toggleHideButton {
+    display: none;
+  }
+
+  .toggleContent {
+    display: none;
+  }
+}
+
+/* global media queries */
+@media (max-width: $screen-sm) {
+
+}
+
+@media (max-width: $screen-xs) {
+}
+
