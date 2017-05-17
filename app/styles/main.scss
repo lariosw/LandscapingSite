@@ -12,11 +12,12 @@ $main-color: green;
 
 .site-header{
   .navbar {
-    background-color: #008080;
+    background-image: url('../images/headerimage.jpg');
     color: white;
     font-size: 20px;
     margin-bottom: 0 !important;
     position: fixed;
+    height: 150px;
     top: 0;
     left: 0;
     right: 0;
@@ -25,6 +26,7 @@ $main-color: green;
 
   .navbar-logo {
     padding-left: 50px;
+    text-shadow: 2px 2px black;
     img {
       padding-right: 10px;
       width: 70px;
@@ -36,7 +38,9 @@ $main-color: green;
     padding: 10px;
   }
   .navbar-collapse {
-    padding-top: 75px;
+    padding-top: 95px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .navbar-nav {
     margin-top: -29px;
@@ -67,6 +71,130 @@ $main-color: green;
     display: none;
   }
 }
+
+.sections-nav {
+
+  div {
+    font-size: 16px;
+    margin: 10px;
+    padding: 3px;
+    /*box-shadow: 5px 5px 2px #888888;*/
+    background-color: #4d4d4d;
+    color: white;
+    text-align: center;
+    a:visited {
+      color: white;
+    }
+
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+.homepage-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #CC8476;
+  .welcome-content {
+    width: 500px;
+    margin:0 auto;
+    text-align: justify;
+  }
+}
+//about styles
+
+.about-us {
+  background-color: #504848;
+  .about-us-image {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.about-us-content {
+  color: white;
+  padding: 20px;
+  h1 {
+    color: black;
+    width: 200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  p {
+    padding: 20px;
+    text-align: justify;
+  }
+}
+
+//service styles
+.section-title-services{
+  background-image: url("/images/servicebackground.jpeg");
+  height: 120px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+
+.gallery-content {
+  clear: both;
+}
+
+.inquiry-container {
+  background-color: 	#696969;
+  padding: 10px 100px;
+  color: white;
+  input {
+    width: 267px;
+    border: none;
+    background-color: gray;
+    font-size: 8px;
+    .input.name {
+      margin-left: -5px;
+    }
+  }
+  .messageBox {
+    width: 267px;
+    border: none;
+    background-color: gray;
+    color: white;
+  }
+}
+#contactPageForm {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (max-width: $screen-sm) {
+  .inquiry-container {
+    padding: 10px 50px;
+  }
+}
+
+.footer {
+  position: relative;
+  bottom:0;
+  background-color: #841F27;
+  color: black;
+  .footer-left-content ul{
+    list-style: none;
+    li {
+      display: inline;
+    }
+  }
+  .footer-right-content {
+    background-color: black;
+    color: white;
+  }
+}
+
+
 
 /* global media queries */
 @media (max-width: $screen-sm) {

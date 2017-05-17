@@ -56,5 +56,8 @@
         2
       ]
     }
+  },
+  "dependencies": {
+    "config-json": "^1.0.0"
   }
 }

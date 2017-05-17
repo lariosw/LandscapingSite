@@ -46,19 +46,19 @@ button:focus {
 }
 
 div.border button {
-  color: #F28B52;
+  color: black;
   background: rgba(0,0,0,0);
-  border: solid 5px #C7C7C7;
+  border: solid 5px black;
 }
 div.border button:hover,
 div.border button.hover {
-  border-color: #C7C7C7;
-  color: #F28B52;
+  border-color: black;
+  color: black;
 }
 div.border button:active,
 div.border button.active {
-  border-color: #C7C7C7;
-  color: #F28B52;
+  border-color: black;
+  color: black;
 }
 
 .lb-outerContainer{
