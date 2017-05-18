@@ -107,12 +107,17 @@ $main-color: green;
     text-align: justify;
   }
 }
+
+.homepage-image img{
+  width: 400px;
+}
 //about styles
 
 .about-us {
   background-color: #504848;
-  .about-us-image {
-    width: 200px;
+  .about-us-image img{
+    width: 300px;
+    border-radius: 50%;
     margin: 0 auto;
   }
 }
@@ -179,18 +184,28 @@ $main-color: green;
 
 .footer {
   position: relative;
-  bottom:0;
-  background-color: #841F27;
+  bottom: 0;
+  margin-top: 10px;
+  opacity: 0.75;
+  /* background-color: #841F27; */
   color: black;
-  .footer-left-content ul{
-    list-style: none;
-    li {
-      display: inline;
-    }
+  font-weight:
+  border-top: 1px solid black;
+  input {
+    font-style: bold;
   }
-  .footer-right-content {
-    background-color: black;
-    color: white;
+  .footer-left-content {
+    margin-top: 10px;
+    ul {
+      list-style: none;
+      li {
+        display: inline;
+      }
+    }
+    .footer-right-content {
+      /* background-color: black; */
+      color: black;
+    }
   }
 }
 
