@@ -31,7 +31,7 @@
   display: inline-block;
   width: 175px;
   height: 50px;
-  margin: 0 10px 0 0;
+  margin: 0 0 0 0;
   padding: 10px 25px;
   font-size: 15px;
   font-family: inherit;
@@ -41,10 +41,21 @@
   border-radius: 0;
 }
 
+button {
+  background-color: white;
+  width: 400px !important;
+  height: 50px !important;
+}
+
 button:focus {
   outline: none
 }
 
+.toggleButtonWrapper {
+  width: 100%;
+}
+
+/*
 div.border button {
   color: black;
   background: rgba(0,0,0,0);
@@ -59,7 +70,7 @@ div.border button:active,
 div.border button.active {
   border-color: black;
   color: black;
-}
+} */
 
 .lb-outerContainer{
   width:70% !important;

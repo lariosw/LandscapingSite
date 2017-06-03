@@ -34,6 +34,10 @@ $main-color: green;
     }
   }
 
+  textarea {
+    margin-top: 7px;
+  }
+
   .navbar-header {
     padding: 10px;
   }
@@ -116,11 +120,52 @@ $main-color: green;
 .about-us {
   background-color: #504848;
   .about-us-image img{
-    width: 300px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
+    display: block;
+    position: relative;
   }
 }
+
+.shortcut-container {
+  position: relative;
+  width: 50%;
+}
+
+.image-shortcut{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.shortcut-container:hover .overlay {
+  height: 100%;
+}
+
+.shortcut-container a {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}*/
 
 .about-us-content {
   color: white;
@@ -141,10 +186,19 @@ $main-color: green;
 //service styles
 .section-title-services{
   background-image: url("/images/servicebackground.jpeg");
-  height: 120px;
+  height: 200px;
   color: white;
   text-shadow: 2px 2px black;
+  margin-top: 0px;
 }
+
+.services-list-section {
+  padding: 15px;
+  ul li {
+    list-style-type: none;
+  }
+}
+
 
 
 .gallery-content {
@@ -189,10 +243,11 @@ $main-color: green;
   opacity: 0.75;
   /* background-color: #841F27; */
   color: black;
-  font-weight:
   border-top: 1px solid black;
+  padding: 5px 10px;
   input {
     font-style: bold;
+    padding-bottom: 3px;
   }
   .footer-left-content {
     margin-top: 10px;
@@ -209,7 +264,9 @@ $main-color: green;
   }
 }
 
-
+.stairs {
+  padding-bottom: 10px;
+}
 
 /* global media queries */
 @media (max-width: $screen-sm) {
