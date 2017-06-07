@@ -54,6 +54,33 @@ var cleoLandscapingApp = {
         $clickedButton.hide();
       }
     });
+  },
+
+  setupContactForm: function(){
+    $('#contactPageForm').submit(function(event){
+
+      //get form data as josn
+      var $form = $(event.target);
+      var formData = {};
+      $.each($form.serializeArray(), function (i, field) {
+        formData[field.name] = field.value || "";
+      });
+
+      $.ajax({
+        type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+        url         : 'api/contact', // the url where we want to POST
+        data        : formData, // our data object
+        dataType    : 'json', // what type of data do we expect back from the server
+        encode          : true
+      })
+      // using the done promise callback
+        .done(function(data) {
+          //todo: what to do when done?
+        });
+
+      // stop the form from submitting the normal way and refreshing the page
+      event.preventDefault();
+    });
   }
 };
 
@@ -64,6 +91,8 @@ $(document).ready(function() {
 
   //load site images
   cleoLandscapingApp.loadSiteImages();
+
+  cleoLandscapingApp.setupContactForm();
 
   //lightbox configurations
   lightbox.option({

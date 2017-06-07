@@ -6,6 +6,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 //Global Styles
 $main-color: green;
+$header-height: 150px;
+$sm-header-height: 80px;
 
 //Page Specific Styles
 @import "gallery";
@@ -17,7 +19,7 @@ $main-color: green;
     font-size: 20px;
     margin-bottom: 0 !important;
     position: fixed;
-    height: 150px;
+    height: $header-height;
     top: 0;
     left: 0;
     right: 0;
@@ -57,7 +59,14 @@ $main-color: green;
   }
 }
 
-
+.header-spacer {
+  position: relative;
+  a {
+    display:block;
+    position:absolute;
+    top:-$header-height;
+  }
+}
   /* toggle wrappers */
 .toggleWrapper {
   .toggleButtonWrapper {
@@ -98,7 +107,7 @@ $main-color: green;
 }
 
 .content-wrapper {
-  margin-top: 150px;
+  margin-top: $header-height;
   margin-bottom: 10px;
 }
 .homepage-content {
@@ -106,7 +115,6 @@ $main-color: green;
   padding: 20px;
   background-color: #CC8476;
   .welcome-content {
-    width: 500px;
     margin:0 auto;
     text-align: justify;
   }
@@ -213,7 +221,7 @@ $main-color: green;
     width: 267px;
     border: none;
     background-color: gray;
-    font-size: 8px;
+    font-size: 14px;
     .input.name {
       margin-left: -5px;
     }
@@ -270,7 +278,30 @@ $main-color: green;
 
 /* global media queries */
 @media (max-width: $screen-sm) {
+  .homepage-content .welcome-content {
+    text-align: center;
+  }
+  .services-list-section{
+    p {
+      text-align:center;
+    }
+    ul{
+      width:250px;
+      margin:0 auto;
+    }
+  }
+}
 
+@media (max-width: $screen-sm) {
+  .site-header .navbar {
+    height: $sm-header-height;
+  }
+  .header-spacer a {
+    top: -$sm-header-height;
+  }
+  .content-wrapper {
+    margin-top: $sm-header-height;
+  }
 }
 
 @media (max-width: $screen-xs) {
