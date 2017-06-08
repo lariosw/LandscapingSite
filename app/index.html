@@ -27,6 +27,7 @@
 
 </head>
 <body>
+<a name="home" style="display:block"></a>
   <div class="header-image">
     <div class="navbar-logo">
       <p>Cleo Landscaping</p>
@@ -50,19 +51,18 @@
             </div>
 
           </div>
+
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
-            <div class="row sections-nav">
-            <div class="nav active col-xs-2"><a href="#home">HOME</a></div>
-              <div class="nav skills-nav  col-xs-2"><a href="#sectionAbout">ABOUT</a></div>
-              <div class="nav contact-nav col-xs-2"><a href="#sectionServices">SERVICES</a></div>
-              <div class="nav portfolio-nav col-xs-2"><a href="#sectionGallery">GALLERY</a></div>
-             <!-- will add in testimonial page later
-              <div class="nav contact-nav col-xs-2"><a href="#sectionTestimonials">TESTIMONIALS</a></div>
-              !-->
-              <div class="nav contact-nav col-xs-2"><a href="#sectionContact">CONTACT</a></div>
+            <ul class="nav navbar-nav">
+              <li> <a href="#home">HOME</a></li>
+              <li> <a class="teachers" href="#sectionAbout">ABOUT</a></li>
+              <li> <a class="gallery" href="#sectionServices">SERVICES</a></li>
+              <li> <a class="schedule" href="#sectionGallery">GALLERY</a></li>
+              <li> <a class="tuition" href="#sectionContact">CONTACT</a></li>
+            </ul>
           </div>
-        </div>
       </div>
+    </div>
     </div>
     <!-- Site Content -->
     <div class="content-wrapper">
@@ -153,15 +153,17 @@
         <div class="emailForm">
           <div class="contact-page-content"> 
             We would love to schedule a free estimate or further discuss your project. We can be reached by Phone <i class="fa fa-phone" aria-hidden="true"></i>&nbsp 206-529-5141 or Cell <i class="fa fa-mobile" aria-hidden="true"></i>206-437-2357
-            email at <a class="contact emailIcon href="mailto:Email: cleolandscaping@hotmail.com?Subject="Landscape Inquiry" target="_top">cleolandscaping@hotmail.com</a>
+            email at <a class="contact emailIcon href="mailto:Email: cleolandscaping@gmail.com?Subject="Landscape Inquiry" target="_top">cleolandscaping@gmail.com</a>
             or feel free to leave us a message with your information and any questions you may have.
           </div> 
           <form id="contactPageForm"> 
-            <span class="input name">*Name</span><input type="text" name="name"/>
-            <span class="input email">*Email Address</span><input type="text" name="email"/> 
-            <span class="input phone">*Phone Number</span><input type="text" name="phone"/> 
-            <span class="input message">Message</span><textarea class="input messageBox"rows="4" cols="35" name="message"   placeholder="Enter text here..."></textarea>
+            <span class="input name">*Name</span><input type="text" name="name" required/>
+            <span class="input email">*Email Address</span><input type="email" name="email" required/> 
+            <span class="input phone">*Phone Number</span><input type="text" name="phone" required/> 
+            <span class="input message">Message</span><textarea class="input messageBox"rows="4" cols="35" name="message" required></textarea>
             <input class="send-button" type="Submit"/> 
+            <span class="success-msg" style="display:none">Thank you! We will contact you shortly</span>
+            <span class="failed-msg" style="display:none">Failed to send. Please try again or contact us directly.</span>
           </form> 
         </div>
       </div>
@@ -179,7 +181,7 @@
         <ul>
           <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp 206-529-5141</li>
           <li><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp 206-437-2357</li>
-          <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="contact emailIcon href="mailto:Email: cleolandscaping@hotmail.com?Subject="Landscape Inquiry" target="_top"> cleolandscaping@hotmail.com</a></li>
+          <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="contact emailIcon href="mailto:Email: cleolandscaping@gmail.com?Subject="Landscape Inquiry" target="_top"> cleolandscaping@gmail.com</a></li>
         </ul>
       </div>
     </div>

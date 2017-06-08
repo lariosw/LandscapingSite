@@ -27,7 +27,7 @@ var settings = {
   },
   contactEmail: {
     TO: "cleolandscaping@gmail.com",
-    SUBJECT: "Message from preschool website contact page",
+    SUBJECT: "Message from landscaping website contact page",
     USERNAME: "cleolandscaping@gmail.com",
     PASSWORD: "",
   }

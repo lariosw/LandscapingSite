@@ -58,9 +58,16 @@ var cleoLandscapingApp = {
 
   setupContactForm: function(){
     $('#contactPageForm').submit(function(event){
+      var $form = $(event.target),
+        $submitBtn = $form.find('input[type=submit]'),
+        $successMsg = $form.find('.success-msg'),
+        $failureMsg = $form.find('.failed-msg');
+
+      //hide submit button
+      $submitBtn.hide();
+      $failureMsg.hide();
 
       //get form data as josn
-      var $form = $(event.target);
       var formData = {};
       $.each($form.serializeArray(), function (i, field) {
         formData[field.name] = field.value || "";
@@ -75,7 +82,12 @@ var cleoLandscapingApp = {
       })
       // using the done promise callback
         .done(function(data) {
-          //todo: what to do when done?
+          $failureMsg.hide();
+          $successMsg.show();
+        })
+        .fail(function(){
+          $submitBtn.show();
+          $failureMsg.show();
         });
 
       // stop the form from submitting the normal way and refreshing the page
