@@ -4,3 +4,4 @@ dist
 .idea
 bower_components
 server/config.json
+app/images/gallery/**

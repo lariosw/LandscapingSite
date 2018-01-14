@@ -26,9 +26,9 @@ var settings = {
     MAX_RETRIES: 4
   },
   contactEmail: {
-    TO: "cleolandscaping@gmail.com",
+    TO: "",
     SUBJECT: "Message from landscaping website contact page",
-    USERNAME: "cleolandscaping@gmail.com",
+    USERNAME: "",
     PASSWORD: "",
   }
 };
@@ -107,7 +107,9 @@ module.exports.init = function(appMode){
   //set app mode
   currentAppMode = appMode;
   //load config
-  settings.contactEmail.PASSWORD = appConfig.permissions.googleMailPassword;
+  settings.contactEmail.TO = appConfig.permissions.mailerDestination;
+  settings.contactEmail.USERNAME = appConfig.permissions.googleMailer;
+  settings.contactEmail.PASSWORD = appConfig.permissions.googleMailerPassword;
   googleApiUtil.setAuth(appConfig.permissions.googleApiAccount, appConfig.permissions.googleApiKey);
 };
 
