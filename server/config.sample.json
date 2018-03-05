@@ -1,0 +1,12 @@
+{
+  "appName": "cleolandscaping.com",
+  "appMode": "DEV",
+  "apiPort": "3005",
+  "permissions": {
+    "googleApiAccount": "",
+    "googleApiKey": "",
+    "mailerDestination": "",
+    "googleMailer": "",
+    "googleMailerPassword": ""
+  }
+}
